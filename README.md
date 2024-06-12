@@ -24,12 +24,9 @@ citybrain_platform.api_baseurl = "http://221.228.10.51:18080/platform/"
 
 5. **Sample Code.**  Our OSM+ dataset is stored as tables, which include:
 ```
-1. osm_node
-2. osm_node_roadnet
-3. osm_fulltag_edge
-4. osm_fulltag_edge_roadnet
-5. osm_split_edge
-6. osm_split_edge_roadnet
+1. osm_node_roadnet
+2. osm_fulltag_edge_roadnet
+3. osm_split_edge_roadnet
 ```
 
 you can access these tables using citybrain-platform API:
