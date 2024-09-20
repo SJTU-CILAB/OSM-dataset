@@ -33,6 +33,7 @@ you can access these tables using citybrain-platform API:
 ```python
 import citybrain_platform
 from citybrain_platform import JobStatus
+import time
 
 # Create computing job
 job_id = citybrain_platform.Computing.create_job(
@@ -45,12 +46,16 @@ job_status = citybrain_platform.Computing.get_job_status(
   job_id=job_id # 
 )
 print(job_status)
+while (job_status.status != JobStatus.TERMINATED):
+  job_status = citybrain_platform.Computing.get_job_status(job_id=job_id)
+  time.sleep(2)
+  print(job_status)
 
 # Download result (csv format)
 if (job_status.status == JobStatus.TERMINATED):
   citybrain_platform.Computing.get_job_results(
     job_id=job_id, 
-    filepath="results.csv" # Save the result data to the local file path
+    filepath="./results.csv" # Save the result data to the local file path
   )
 ```
 
