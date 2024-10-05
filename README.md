@@ -37,11 +37,11 @@ pip install --upgrade citybrain-platform
 ```
 2. **Platform Register.** Open http://221.228.10.51:18080 in browser and register:
 
-![figure](./assets/citybrain_platform.png "Citybrain Platform")
+<!-- ![figure](./assets/citybrain_platform.png "Citybrain Platform") -->
 
 3. **Get ApiKey.** Click the account name drop-down menu in the upper right corner, click ***Settings*** to enter the personal settings page, and you can view the ApiKey of the current account.
 
-![figure](./assets/apikey.png "Citybrain Platform")
+<!-- ![figure](./assets/apikey.png "Citybrain Platform") -->
 
 4. **Environment Setting.** Set the CITYBRAIN_APIKEY and BASEURL environment variable before using the library: 
 
