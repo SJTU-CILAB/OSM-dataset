@@ -4,7 +4,7 @@
  <div>
 
 
-  <h1>OSM+: Cloud-native Open Street Map Data System for City-wide Traffic Experiments</h1>
+  <h1>OSM+: Billion-Level Open Street Map Dataset for City-wide Experiments</h1>
 
   <!-- <div>
       <a href="https://jhc.sjtu.edu.cn/~gjzheng/" target="_blank">Guanjie Zheng</a><sup>1</sup><sup></sup>,
@@ -30,66 +30,15 @@
 
 ### :rocket: Quick Start for OSM+ dataset
 
-1. **Installation.** First, you need to install citybrain-platform package:
+1. **Platform Register.** First, you need register at Citybrain Open Platform. Open https://workspace.citybrain.org/#/home in browser and register.
 
-```
-pip install --upgrade citybrain-platform
-```
-2. **Platform Register.** Open http://221.228.10.51:18080 in browser and register:
+<!-- ![figure](./assets/platform_register.png "Platform Register") -->
 
-<!-- ![figure](./assets/citybrain_platform.png "Citybrain Platform") -->
+2. **Get Dataset.** Open https://workspace.citybrain.org/#/start/datasets?id=66802 in browser, and then click in the folder, the detailed information of OSM+ dataset is shown.
 
-3. **Get ApiKey.** Click the account name drop-down menu in the upper right corner, click ***Settings*** to enter the personal settings page, and you can view the ApiKey of the current account.
+3. **Download Dataset.** The OSM+ dataset contains three tables: *osm_node_roadnet*, *osm_split_edge_roadnet* and *osm_fulltag_edge_roadnet*. Click the "download" button in the right, and then the citybrain platform will automatically download the tables.
+<!-- ![figure](./assets/download_dataset.png "Download Dataset") -->
 
-<!-- ![figure](./assets/apikey.png "Citybrain Platform") -->
-
-4. **Environment Setting.** Set the CITYBRAIN_APIKEY and BASEURL environment variable before using the library: 
-
-```python
-import citybrain_platform
-
-citybrain_platform.api_key = "..."
-citybrain_platform.api_baseurl = "http://221.228.10.51:18080/platform/" 
-```
-
-5. **Sample Code.**  Our OSM+ dataset is stored as tables, which include:
-```
-1. osm_node_roadnet
-2. osm_fulltag_edge_roadnet
-3. osm_split_edge_roadnet
-```
-
-you can access these tables using citybrain-platform API:
-```python
-import citybrain_platform
-from citybrain_platform import JobStatus
-import time
-
-# Create computing job
-job_id = citybrain_platform.Computing.create_job(
-  sql="select avg(col_id) from test_tblname;" # SQL commands 
-)
-print(job_id)
-
-# View the job running status
-job_status = citybrain_platform.Computing.get_job_status(
-  job_id=job_id # 
-)
-print(job_status)
-while (job_status.status != JobStatus.TERMINATED):
-  job_status = citybrain_platform.Computing.get_job_status(job_id=job_id)
-  time.sleep(2)
-  print(job_status)
-
-# Download result (csv format)
-if (job_status.status == JobStatus.TERMINATED):
-  citybrain_platform.Computing.get_job_results(
-    job_id=job_id, 
-    filepath="./results.csv" # Save the result data to the local file path
-  )
-```
-
-6. **More Information.** For more information about citybrain-platform API, see https://github.com/citybrain-platform/python-library
 
 ### Evaluate on Traffic Prediction Task
 **If you want to evaluate the OSM+ dataset on traffic prediction task**: We provide a benchmark on 7 baseline methods based on OSM+ and UTD19 datasets. The code is provided in 
