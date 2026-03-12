@@ -34,9 +34,9 @@
 
 ![figure](./assets/platform_register.png "Platform Register")
 
-2. **Get Dataset.** Open https://workspace.citybrain.org/#/start/datasets?id=66802 in browser, and then click in the folder, the detailed information of OSM+ dataset is shown.
+2. **Get Dataset.** Open https://workspace.citybrain.org/#/start/datasets?id=66972 in browser, and then click in the folder, the detailed information of OSM+ dataset is shown.
 
-3. **Download Dataset.** The OSM+ dataset contains three tables: *osm_node_roadnet*, *osm_split_edge_roadnet* and *osm_fulltag_edge_roadnet*. Click the "download" button in the right, and then the citybrain platform will automatically download the tables.
+3. **Download Dataset.** The OSM+ dataset contains three tables: *osm_node_roadnet*, *osm_split_edge_roadnet* and *osm_fulltag_edge_roadnet*. Click the "copy" button in the right, and then paste it into the search bar. The citybrain platform will automatically download the tables.
 ![figure](./assets/download_dataset.png "Download Dataset")
 
 
