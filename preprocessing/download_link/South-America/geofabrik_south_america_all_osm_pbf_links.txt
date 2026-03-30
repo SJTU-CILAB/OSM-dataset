@@ -1,0 +1,11 @@
+https://download.geofabrik.de/south-america/argentina-latest.osm.pbf
+https://download.geofabrik.de/south-america/bolivia-latest.osm.pbf
+https://download.geofabrik.de/south-america/chile-latest.osm.pbf
+https://download.geofabrik.de/south-america/colombia-latest.osm.pbf
+https://download.geofabrik.de/south-america/ecuador-latest.osm.pbf
+https://download.geofabrik.de/south-america/guyana-latest.osm.pbf
+https://download.geofabrik.de/south-america/paraguay-latest.osm.pbf
+https://download.geofabrik.de/south-america/peru-latest.osm.pbf
+https://download.geofabrik.de/south-america/suriname-latest.osm.pbf
+https://download.geofabrik.de/south-america/uruguay-latest.osm.pbf
+https://download.geofabrik.de/south-america/venezuela-latest.osm.pbf

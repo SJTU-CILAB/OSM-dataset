@@ -1,0 +1,6 @@
+https://download.geofabrik.de/asia/india/central-zone-latest.osm.pbf
+https://download.geofabrik.de/asia/india/eastern-zone-latest.osm.pbf
+https://download.geofabrik.de/asia/india/north-eastern-zone-latest.osm.pbf
+https://download.geofabrik.de/asia/india/northern-zone-latest.osm.pbf
+https://download.geofabrik.de/asia/india/southern-zone-latest.osm.pbf
+https://download.geofabrik.de/asia/india/western-zone-latest.osm.pbf

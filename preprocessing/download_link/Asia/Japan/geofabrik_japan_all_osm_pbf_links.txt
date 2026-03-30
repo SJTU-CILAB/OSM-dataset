@@ -1,0 +1,8 @@
+https://download.geofabrik.de/asia/japan/chubu-latest.osm.pbf
+https://download.geofabrik.de/asia/japan/chugoku-latest.osm.pbf
+https://download.geofabrik.de/asia/japan/hokkaido-latest.osm.pbf
+https://download.geofabrik.de/asia/japan/kansai-latest.osm.pbf
+https://download.geofabrik.de/asia/japan/kanto-latest.osm.pbf
+https://download.geofabrik.de/asia/japan/kyushu-latest.osm.pbf
+https://download.geofabrik.de/asia/japan/shikoku-latest.osm.pbf
+https://download.geofabrik.de/asia/japan/tohoku-latest.osm.pbf

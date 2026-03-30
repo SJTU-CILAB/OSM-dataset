@@ -1,0 +1,5 @@
+https://download.geofabrik.de/south-america/brazil/centro-oeste-latest.osm.pbf
+https://download.geofabrik.de/south-america/brazil/nordeste-latest.osm.pbf
+https://download.geofabrik.de/south-america/brazil/norte-latest.osm.pbf
+https://download.geofabrik.de/south-america/brazil/sudeste-latest.osm.pbf
+https://download.geofabrik.de/south-america/brazil/sul-latest.osm.pbf

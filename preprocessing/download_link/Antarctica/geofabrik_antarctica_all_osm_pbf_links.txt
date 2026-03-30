@@ -1,0 +1,1 @@
+https://download.geofabrik.de/antarctica-latest.osm.pbf
