@@ -89,17 +89,13 @@ def run(points,outfile,check_window = False):
 points = np.loadtxt('osm_100000.csv', delimiter=',')
 outfile= 'single_core_'
 
-#计算没有window索引的时间
 time1 = time.time()
 run(points,outfile + 'without_window_' + 'osm_100000.csv',False)
-#结束时间
 time2 = time.time()
 print("Single core,osm_100000 without windows index, time used: ", time2 - time1)
 
-#计算带window索引的时间
 time1 = time.time()
 run(points,outfile + 'with_window_' + 'osm_100000.csv',True)
-#结束时间
 time2 = time.time()
 print("Single core,osm_100000 with windows index, time used: ", time2 - time1)
 
@@ -109,17 +105,13 @@ print("Single core,osm_100000 with windows index, time used: ", time2 - time1)
 points = np.loadtxt('osm_10000.csv', delimiter=',')
 outfile= 'single_core_'
 
-#计算没有window索引的时间
 time1 = time.time()
 run(points,outfile + 'without_window_' + 'osm_10000.csv',False)
-#结束时间
 time2 = time.time()
 print("Single core,osm_10000 without windows index, time used: ", time2 - time1)
 
-#计算带window索引的时间
 time1 = time.time()
 run(points,outfile + 'with_window_' + 'osm_10000.csv',True)
-#结束时间
 time2 = time.time()
 print("Single core,osm_10000 with windows index, time used: ", time2 - time1)
 
@@ -129,9 +121,7 @@ print("Single core,osm_10000 with windows index, time used: ", time2 - time1)
 points = np.loadtxt('osm_1000.csv', delimiter=',')
 outfile= 'single_core_'
 
-#计算没有window索引的时间
 time1 = time.time()
 run(points,outfile + 'with_window_' + 'osm_10000.csv',True)
-#结束时间
 time2 = time.time()
 print("Single core,osm_1000 with windows index, time used: ", time2 - time1)

@@ -33,7 +33,7 @@
         <th>MAPE(%)</th>
     </tr>
     <tr>
-        <th>AA</th>
+        <th>AGB</th>
         <th>47.92</th>
         <th>44.03</th>
         <th><ins>44.40</ins></th>
@@ -577,7 +577,7 @@ The performance comparison for seven baseline methods over 31 real-world city da
         <th>MTGNN</th>
     </tr>
     <tr>
-        <th rowspan="3">AA</th>
+        <th rowspan="3">AGB</th>
         <th>MAE</th>
         <th>42.53 &plusmn 0.22</th>
         <th><ins>39.89 &plusmn 0.11</th>
@@ -1553,7 +1553,7 @@ The performance comparison for seven baseline methods over 31 real-world city da
         <th>MTGNN</th>
     </tr>
     <tr>
-        <th rowspan="3">AA</th>
+        <th rowspan="3">AGB</th>
         <th>MAE</th>
         <th>47.27 &plusmn 0.41</th>
         <th><ins>43.29 &plusmn 0.11</th>
@@ -2529,7 +2529,7 @@ The performance comparison for seven baseline methods over 31 real-world city da
         <th>MTGNN</th>
     </tr>
     <tr>
-        <th rowspan="3">AA</th>
+        <th rowspan="3">AGB</th>
         <th>MAE</th>
         <th>55.05 &plusmn 0.93</th>
         <th><ins>49.30 &plusmn 0.79</th>

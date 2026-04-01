@@ -23,7 +23,7 @@ def getODPSTaskCost(instance,task_name='KDEmeanTest'):
 
 
 #############################################################################
-# test osm_10.csv，1/10之一采样，带索引
+# test osm_10.csv: 1/10 sampling, with index
 #############################################################################
 
 
@@ -45,14 +45,14 @@ def getODPSTaskCost(instance,task_name='KDEmeanTest'):
 # ) group by x,y
 
 
-#创建结果表
+# Create result table
 #o.execute_sql('drop table osm_roadnet_kde_mean_test')
 o.execute_sql('CREATE TABLE IF NOT EXISTS osm_density(x1 INT,y1 INT,x2 INT,y2 INT,density FLOAT)')
 o.execute_sql('truncate table osm_density')
 
 def run_part_1_5(j):
 
-    #执行SQL
+    # Execute SQL
     hints=dict({'odps.sql.mapper.split.size':1,
                 'odps.sql.python.version':'cp37',
                 'odps.sql.jobconf.odps2':'true',

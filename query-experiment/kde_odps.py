@@ -41,17 +41,17 @@ def getODPSTaskCost(instance,task_name='KDEmeanTest'):
     mem= cost.split(",")[0]
     return cpu + ',' + mem
 
-#创建结果表
+# Create result table
 o.execute_sql('CREATE TABLE IF NOT EXISTS citybrain_prod.osm_roadnet_kde_mean_test(x DOUBLE,y DOUBLE, kde DOUBLE)')
 o.execute_sql('truncate table osm_roadnet_kde_mean_test')
 
 if not SKIP:
     #############################################################################
-    # test osm_100000.csv，1/100000之一采样，19450记录条数，不用索引
+    # test osm_100000.csv: 1/100000 sampling, 19450 rows, no index
     #############################################################################
     time1 = time.time()
 
-    #执行SQL
+    # Execute SQL
     hints=dict({'odps.sql.mapper.split.size':1,
                 'odps.sql.python.version':'cp37',
                 'odps.sql.jobconf.odps2':'true',
@@ -74,24 +74,24 @@ if not SKIP:
 
     waitInstanceFinish(instance1)
     time2 = time.time()
-    #删除中间表
+    # Drop intermediate tables
     #o.execute_sql('drop table osm_roadnet_kde_mean_test')
 
-    #计算用时,计算cost,KDEmeanTest
+    # Elapsed time, cost, KDEmeanTest
     cost = getODPSTaskCost(instance1)
     print("ODPS,osm_100000 with windows index, time used:", time2 - time1, ' ,cost:',cost.lstrip())
 
 
     #############################################################################
-    # test osm_10000.csv,1/10000之一采样，194500记录条数，不用索引
+    # test osm_10000.csv: 1/10000 sampling, 194500 rows, no index
     #############################################################################
     time1 = time.time()
 
-    #创建结果表
+    # Create result table
     #o.execute_sql('CREATE TABLE IF NOT EXISTS citybrain_prod.osm_roadnet_kde_mean_test(x DOUBLE,y DOUBLE, kde DOUBLE)')
     o.execute_sql('truncate table osm_roadnet_kde_mean_test')
 
-    #执行SQL
+    # Execute SQL
     hints=dict({'odps.sql.mapper.split.size':1,
                 'odps.sql.python.version':'cp37',
                 'odps.sql.jobconf.odps2':'true',
@@ -114,24 +114,24 @@ if not SKIP:
 
     waitInstanceFinish(instance1)
     time2 = time.time()
-    #删除中间表
+    # Drop intermediate tables
     #o.execute_sql('drop table osm_roadnet_kde_mean_test')
 
-    #计算用时,计算cost,KDEmeanTest
+    # Elapsed time, cost, KDEmeanTest
     cost = getODPSTaskCost(instance1)
     print("ODPS,osm_10000 with windows index, time used:", time2 - time1, ' ,cost:',cost.lstrip())
 
 if not SKIP:
     #############################################################################
-    # test osm_10000.csv,1/10000之一采样，194500记录条数，不用索引
+    # test osm_10000.csv: 1/10000 sampling, 194500 rows, no index
     #############################################################################
     time1 = time.time()
 
-    #创建结果表
+    # Create result table
     #o.execute_sql('CREATE TABLE IF NOT EXISTS citybrain_prod.osm_roadnet_kde_mean_test(x DOUBLE,y DOUBLE, kde DOUBLE)')
     o.execute_sql('truncate table osm_roadnet_kde_mean_test')
 
-    #执行SQL
+    # Execute SQL
     hints=dict({'odps.sql.mapper.split.size':1,
                 'odps.sql.python.version':'cp37',
                 'odps.sql.jobconf.odps2':'true',
@@ -154,26 +154,26 @@ if not SKIP:
 
     waitInstanceFinish(instance1)
     time2 = time.time()
-    #删除中间表
+    # Drop intermediate tables
     #o.execute_sql('drop table osm_roadnet_kde_mean_test')
 
-    #计算用时,计算cost,KDEmeanTest
+    # Elapsed time, cost, KDEmeanTest
     cost = getODPSTaskCost(instance1)
     print("ODPS,osm_10000 with windows index, time used:", time2 - time1, ' ,cost:',cost.lstrip())
 
 
 #############################################################################
-# test osm_10000.csv,1/1000之一采样，1945000记录条数，不用索引
+# test osm_10000.csv: 1/1000 sampling, 1945000 rows, no index
 #############################################################################
 
 if not SKIP:
     time1 = time.time()
 
-    #创建结果表
+    # Create result table
     #o.execute_sql('CREATE TABLE IF NOT EXISTS citybrain_prod.osm_roadnet_kde_mean_test(x DOUBLE,y DOUBLE, kde DOUBLE)')
     o.execute_sql('truncate table osm_roadnet_kde_mean_test')
 
-    #执行SQL
+    # Execute SQL
     hints=dict({'odps.sql.mapper.split.size':1,
                 'odps.sql.python.version':'cp37',
                 'odps.sql.jobconf.odps2':'true',
@@ -196,25 +196,25 @@ if not SKIP:
 
     waitInstanceFinish(instance1)
     time2 = time.time()
-    #删除中间表
+    # Drop intermediate tables
     #o.execute_sql('drop table osm_roadnet_kde_mean_test')
 
-    #计算用时,计算cost,KDEmeanTest
+    # Elapsed time, cost, KDEmeanTest
     cost = getODPSTaskCost(instance1)
     print("ODPS,osm_1000 with windows index, time used:", time2 - time1, ' ,cost:',cost.lstrip())
 
 
 if not SKIP:
     #############################################################################
-    # test osm_100000.csv，1/100000之一采样，19450记录条数，带索引
+    # test osm_100000.csv: 1/100000 sampling, 19450 rows, with index
     #############################################################################
     time1 = time.time()
 
-    #创建结果表
+    # Create result table
     #o.execute_sql('CREATE TABLE IF NOT EXISTS citybrain_prod.osm_roadnet_kde_mean_test(x DOUBLE,y DOUBLE, kde DOUBLE)')
     o.execute_sql('truncate table osm_roadnet_kde_mean_test')
 
-    #执行SQL
+    # Execute SQL
     hints=dict({'odps.sql.mapper.split.size':1,
                 'odps.sql.python.version':'cp37',
                 'odps.sql.jobconf.odps2':'true',
@@ -313,24 +313,24 @@ if not SKIP:
 
     waitInstanceFinish(instance1)
     time2 = time.time()
-    #删除中间表
+    # Drop intermediate tables
     #o.execute_sql('drop table osm_roadnet_kde_mean_test')
 
-    #计算用时,计算cost,KDEmeanTest
+    # Elapsed time, cost, KDEmeanTest
     cost = getODPSTaskCost(instance1)
     print("ODPS,osm_100000 with windows index, time used:", time2 - time1, ' ,cost:',cost.lstrip())
 
 if not SKIP:
     #############################################################################
-    # test osm_10000.csv，1/10000之一采样，194500记录条数，带索引
+    # test osm_10000.csv: 1/10000 sampling, 194500 rows, with index
     #############################################################################
     time1 = time.time()
 
-    #创建结果表
+    # Create result table
     #o.execute_sql('CREATE TABLE IF NOT EXISTS citybrain_prod.osm_roadnet_kde_mean_test(x DOUBLE,y DOUBLE, kde DOUBLE)')
     o.execute_sql('truncate table osm_roadnet_kde_mean_test')
 
-    #执行SQL
+    # Execute SQL
     hints=dict({'odps.sql.mapper.split.size':1,
                 'odps.sql.python.version':'cp37',
                 'odps.sql.jobconf.odps2':'true',
@@ -429,26 +429,26 @@ if not SKIP:
 
     waitInstanceFinish(instance1)
     time2 = time.time()
-    #删除中间表
+    # Drop intermediate tables
     #o.execute_sql('drop table osm_roadnet_kde_mean_test')
 
-    #计算用时,计算cost,KDEmeanTest
+    # Elapsed time, cost, KDEmeanTest
     cost = getODPSTaskCost(instance1)
     print("ODPS,osm_10000 with windows index, time used:", time2 - time1, ' ,cost:',cost.lstrip())
 
 #############################################################################
-# test osm_10000.csv，1/100000之一采样，19450记录条数，带索引，带整型对比
+# test osm_10000.csv: 1/100000 sampling, 19450 rows, with index, integer comparison
 #############################################################################
 
 
 time1 = time.time()
 
-#创建结果表
+# Create result table
 #o.execute_sql('drop table osm_roadnet_kde_mean_test')
 #o.execute_sql('CREATE TABLE IF NOT EXISTS citybrain_prod.osm_roadnet_kde_mean_test(x DOUBLE,y DOUBLE, kde DOUBLE)')
 o.execute_sql('truncate table osm_roadnet_kde_mean_test')
 
-#执行SQL
+# Execute SQL
 hints=dict({'odps.sql.mapper.split.size':1,
             'odps.sql.python.version':'cp37',
             'odps.sql.jobconf.odps2':'true',
@@ -547,27 +547,27 @@ instance1 =  o.execute_sql(sql= 'insert into table osm_roadnet_kde_mean_test ' +
 
 waitInstanceFinish(instance1)
 time2 = time.time()
-#删除中间表
+# Drop intermediate tables
 #o.execute_sql('drop table osm_roadnet_kde_mean_test')
 
-#计算用时,计算cost,KDEmeanTest
+# Elapsed time, cost, KDEmeanTest
 cost = getODPSTaskCost(instance1)
 print("ODPS,osm_100000 with windows index and integer compare, time used:", time2 - time1, ' ,cost:',cost.lstrip())
 
 
 #############################################################################
-# test osm_10000.csv，1/10000之一采样，194500记录条数，带索引，带整型对比
+# test osm_10000.csv: 1/10000 sampling, 194500 rows, with index, integer comparison
 #############################################################################
 
 if not SKIP:
     time1 = time.time()
 
-    #创建结果表
+    # Create result table
     #o.execute_sql('drop table osm_roadnet_kde_mean_test')
     #o.execute_sql('CREATE TABLE IF NOT EXISTS citybrain_prod.osm_roadnet_kde_mean_test(x DOUBLE,y DOUBLE, kde DOUBLE)')
     o.execute_sql('truncate table osm_roadnet_kde_mean_test')
 
-    #执行SQL
+    # Execute SQL
     hints=dict({'odps.sql.mapper.split.size':1,
                 'odps.sql.python.version':'cp37',
                 'odps.sql.jobconf.odps2':'true',
@@ -666,25 +666,25 @@ if not SKIP:
 
     waitInstanceFinish(instance1)
     time2 = time.time()
-    #删除中间表
+    # Drop intermediate tables
     #o.execute_sql('drop table osm_roadnet_kde_mean_test')
 
-    #计算用时,计算cost,KDEmeanTest
+    # Elapsed time, cost, KDEmeanTest
     cost = getODPSTaskCost(instance1)
     print("ODPS,osm_10000 with windows index and integer compare, time used:", time2 - time1, ' ,cost:',cost.lstrip())
 
 if not SKIP:
     #############################################################################
-    # test osm_1000.csv，1/1000之一采样，1945000记录条数，带索引
+    # test osm_1000.csv: 1/1000 sampling, 1945000 rows, with index
     #############################################################################
     time1 = time.time()
 
-    #创建结果表
+    # Create result table
     #o.execute_sql('drop table osm_roadnet_kde_mean_test')
     #o.execute_sql('CREATE TABLE IF NOT EXISTS citybrain_prod.osm_roadnet_kde_mean_test(x DOUBLE,y DOUBLE, kde DOUBLE)  CLUSTERED BY (idx ASC) SORTED BY (idx ASC) INTO 1024 BUCKETS')
     o.execute_sql('truncate table osm_roadnet_kde_mean_test')
 
-    #执行SQL
+    # Execute SQL
     hints=dict({'odps.sql.mapper.split.size':1,
                 'odps.sql.python.version':'cp37',
                 'odps.sql.jobconf.odps2':'true',
@@ -783,27 +783,27 @@ if not SKIP:
 
     waitInstanceFinish(instance1)
     time2 = time.time()
-    #删除中间表
+    # Drop intermediate tables
     #o.execute_sql('drop table osm_roadnet_kde_mean_test')
 
-    #计算用时,计算cost,KDEmeanTest
+    # Elapsed time, cost, KDEmeanTest
     cost = getODPSTaskCost(instance1)
     print("ODPS,osm_1000 with windows index, time used:", time2 - time1, ' ,cost:',cost.lstrip())
 
 
 #############################################################################
-# test osm_10000.csv，1/1000之一采样，1945000记录条数，带索引，带整型对比
+# test osm_10000.csv: 1/1000 sampling, 1945000 rows, with index, integer comparison
 #############################################################################
 time1 = time.time()
 
-#创建结果表
+# Create result table
 #o.execute_sql('drop table osm_roadnet_kde_mean_test')
 #o.execute_sql('CREATE TABLE IF NOT EXISTS citybrain_prod.osm_roadnet_kde_mean_test(x INT,y INT, kde DOUBLE)')
 
 if not SKIP:
     o.execute_sql('truncate table osm_roadnet_kde_mean_test')
 
-    #执行SQL
+    # Execute SQL
     hints=dict({'odps.sql.mapper.split.size':1,
                 'odps.sql.python.version':'cp37',
                 'odps.sql.jobconf.odps2':'true',
@@ -902,25 +902,25 @@ if not SKIP:
 
     waitInstanceFinish(instance1)
     time2 = time.time()
-    #删除中间表
+    # Drop intermediate tables
     #o.execute_sql('drop table osm_roadnet_kde_mean_test')
 
-    #计算用时,计算cost,KDEmeanTest
+    # Elapsed time, cost, KDEmeanTest
     cost = getODPSTaskCost(instance1)
     print("ODPS,osm_1000 with windows index and integer compare, time used:", time2 - time1, ' ,cost:',cost.lstrip())
 
 if not SKIP:
     #############################################################################
-    # test osm_100.csv，1/100之一采样，19458614记录条数，带索引
+    # test osm_100.csv: 1/100 sampling, 19458614 rows, with index
     #############################################################################
     time1 = time.time()
 
-    #创建结果表
+    # Create result table
     #o.execute_sql('drop table osm_roadnet_kde_mean_test')
     #o.execute_sql('CREATE TABLE IF NOT EXISTS citybrain_prod.osm_roadnet_kde_mean_test(x DOUBLE,y DOUBLE, kde DOUBLE)  CLUSTERED BY (idx ASC) SORTED BY (idx ASC) INTO 1024 BUCKETS')
     o.execute_sql('truncate table osm_roadnet_kde_mean_test')
 
-    #执行SQL
+    # Execute SQL
     hints=dict({'odps.sql.mapper.split.size':1,
                 'odps.sql.python.version':'cp37',
                 'odps.sql.jobconf.odps2':'true',
@@ -1019,25 +1019,25 @@ if not SKIP:
 
     waitInstanceFinish(instance1)
     time2 = time.time()
-    #删除中间表
+    # Drop intermediate tables
     #o.execute_sql('drop table osm_roadnet_kde_mean_test')
 
-    #计算用时,计算cost,KDEmeanTest
+    # Elapsed time, cost, KDEmeanTest
     cost = getODPSTaskCost(instance1)
     print("ODPS,osm_100 with windows index, time used:", time2 - time1, ' ,cost:',cost.lstrip())
 
 #############################################################################
-# test osm_100.csv，1/100之一采样，1945万记录条数，带索引，带整型对比
+# test osm_100.csv: 1/100 sampling, 19.45M rows, with index, integer comparison
 #############################################################################
 
 if not SKIP:
     time1 = time.time()
 
-    #创建结果表
+    # Create result table
     #o.execute_sql('CREATE TABLE IF NOT EXISTS citybrain_prod.osm_roadnet_kde_mean_test(x INT,y INT, kde DOUBLE)')
     o.execute_sql('truncate table osm_roadnet_kde_mean_test')
 
-    #执行SQL
+    # Execute SQL
     hints=dict({'odps.sql.mapper.split.size':1,
                 'odps.sql.python.version':'cp37',
                 'odps.sql.jobconf.odps2':'true',
@@ -1136,24 +1136,24 @@ if not SKIP:
 
     waitInstanceFinish(instance1)
     time2 = time.time()
-    #删除中间表
+    # Drop intermediate tables
     o.execute_sql('drop table osm_roadnet_kde_mean_test')
 
-    #计算用时,计算cost,KDEmeanTest
+    # Elapsed time, cost, KDEmeanTest
     cost = getODPSTaskCost(instance1)
     print("ODPS,osm_100 with windows index and integer compare, time used:", time2 - time1, ' ,cost:',cost.lstrip())
 
 #############################################################################
-# test osm_100.csv，1/100之一采样，19450万记录条数，带索引，带整型对比
+# test osm_100.csv: 1/100 sampling, 194.5M rows, with index, integer comparison
 #############################################################################
 
 #==========================================================================================================
-#创建结果表
+# Create result table
 time1 = time.time()
 #o.execute_sql('CREATE TABLE IF NOT EXISTS citybrain_prod.osm_roadnet_kde_mean_test(x INT,y INT, kde DOUBLE)')
 o.execute_sql('truncate table osm_roadnet_kde_mean_test')
 
-#执行SQL
+# Execute SQL
 hints=dict({'odps.sql.mapper.split.size':1,
             'odps.sql.python.version':'cp37',
             'odps.sql.jobconf.odps2':'true',
@@ -1252,10 +1252,10 @@ instance1 =  o.execute_sql(sql= 'insert into table osm_roadnet_kde_mean_test ' +
 
 waitInstanceFinish(instance1)
 time2 = time.time()
-#删除中间表
+# Drop intermediate tables
 o.execute_sql('drop table osm_roadnet_kde_mean_test')
 
-#计算用时,计算cost,KDEmeanTest
+# Elapsed time, cost, KDEmeanTest
 cost = getODPSTaskCost(instance1)
 print("ODPS,osm_100 with windows index and integer compare, time used:", time2 - time1, ' ,cost:',cost.lstrip())
 
