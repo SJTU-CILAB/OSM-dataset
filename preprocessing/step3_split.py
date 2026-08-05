@@ -14,7 +14,6 @@ from __future__ import annotations
 
 import argparse
 import csv
-import os
 from concurrent.futures import ProcessPoolExecutor, as_completed
 from dataclasses import asdict, dataclass
 from pathlib import Path
@@ -235,8 +234,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--workers",
         type=int,
-        default=max(1, (os.cpu_count() or 1) - 1),
-        help="Number of worker processes. Default: cpu_count - 1.",
+        default=16,
+        help="Number of worker processes. Default: 16.",
     )
     parser.add_argument(
         "--overwrite",

@@ -1,0 +1,2 @@
+https://download.geofabrik.de/north-america/us/california/norcal-latest.osm.pbf
+https://download.geofabrik.de/north-america/us/california/socal-latest.osm.pbf

@@ -1,9 +1,7 @@
-https://download.geofabrik.de/north-america/us-260325.osm.pbf
 https://download.geofabrik.de/north-america/us/alabama-latest.osm.pbf
 https://download.geofabrik.de/north-america/us/alaska-latest.osm.pbf
 https://download.geofabrik.de/north-america/us/arizona-latest.osm.pbf
 https://download.geofabrik.de/north-america/us/arkansas-latest.osm.pbf
-https://download.geofabrik.de/north-america/us/california-latest.osm.pbf
 https://download.geofabrik.de/north-america/us/colorado-latest.osm.pbf
 https://download.geofabrik.de/north-america/us/connecticut-latest.osm.pbf
 https://download.geofabrik.de/north-america/us/delaware-latest.osm.pbf

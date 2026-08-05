@@ -19,8 +19,8 @@ https://download.geofabrik.de/africa/eritrea-latest.osm.pbf
 https://download.geofabrik.de/africa/ethiopia-latest.osm.pbf
 https://download.geofabrik.de/africa/gabon-latest.osm.pbf
 https://download.geofabrik.de/africa/ghana-latest.osm.pbf
-https://download.geofabrik.de/africa/guinea-latest.osm.pbf
 https://download.geofabrik.de/africa/guinea-bissau-latest.osm.pbf
+https://download.geofabrik.de/africa/guinea-latest.osm.pbf
 https://download.geofabrik.de/africa/ivory-coast-latest.osm.pbf
 https://download.geofabrik.de/africa/kenya-latest.osm.pbf
 https://download.geofabrik.de/africa/lesotho-latest.osm.pbf

@@ -1,0 +1,7 @@
+https://download.geofabrik.de/europe/germany/bayern/mittelfranken-latest.osm.pbf
+https://download.geofabrik.de/europe/germany/bayern/niederbayern-latest.osm.pbf
+https://download.geofabrik.de/europe/germany/bayern/oberbayern-latest.osm.pbf
+https://download.geofabrik.de/europe/germany/bayern/oberfranken-latest.osm.pbf
+https://download.geofabrik.de/europe/germany/bayern/oberpfalz-latest.osm.pbf
+https://download.geofabrik.de/europe/germany/bayern/schwaben-latest.osm.pbf
+https://download.geofabrik.de/europe/germany/bayern/unterfranken-latest.osm.pbf

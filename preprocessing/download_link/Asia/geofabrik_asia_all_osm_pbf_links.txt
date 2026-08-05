@@ -32,4 +32,3 @@ https://download.geofabrik.de/asia/turkmenistan-latest.osm.pbf
 https://download.geofabrik.de/asia/uzbekistan-latest.osm.pbf
 https://download.geofabrik.de/asia/vietnam-latest.osm.pbf
 https://download.geofabrik.de/asia/yemen-latest.osm.pbf
-https://download.geofabrik.de/asia/sea-latest.osm.pbf

@@ -1,0 +1,4 @@
+https://download.geofabrik.de/europe/united-kingdom/bermuda-latest.osm.pbf
+https://download.geofabrik.de/europe/united-kingdom/falklands-latest.osm.pbf
+https://download.geofabrik.de/europe/united-kingdom/scotland-latest.osm.pbf
+https://download.geofabrik.de/europe/united-kingdom/wales-latest.osm.pbf

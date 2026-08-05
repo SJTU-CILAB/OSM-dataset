@@ -1,0 +1,9 @@
+https://download.geofabrik.de/asia/russia/central-fed-district-latest.osm.pbf
+https://download.geofabrik.de/asia/russia/crimean-fed-district-latest.osm.pbf
+https://download.geofabrik.de/asia/russia/far-eastern-fed-district-latest.osm.pbf
+https://download.geofabrik.de/asia/russia/north-caucasus-fed-district-latest.osm.pbf
+https://download.geofabrik.de/asia/russia/northwestern-fed-district-latest.osm.pbf
+https://download.geofabrik.de/asia/russia/siberian-fed-district-latest.osm.pbf
+https://download.geofabrik.de/asia/russia/south-fed-district-latest.osm.pbf
+https://download.geofabrik.de/asia/russia/ural-fed-district-latest.osm.pbf
+https://download.geofabrik.de/asia/russia/volga-fed-district-latest.osm.pbf
